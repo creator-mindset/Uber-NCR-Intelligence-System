@@ -9,7 +9,7 @@ status_model = joblib.load("status_model.pkl")
 
 
 st.set_page_config(
-    page_title="Uber NCR Smart Ride Predictor",
+    page_title="Uber NCR Intelligence System",
     layout="wide"
 )
 
