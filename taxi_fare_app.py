@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🚖 Uber NCR Smart Ride Predictor")
+st.title("🚖 Uber NCR Intelligence System")
 
 
 menu = st.sidebar.selectbox(
