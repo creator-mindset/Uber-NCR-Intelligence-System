@@ -4,11 +4,13 @@ import pandas as pd
 import joblib
 
 
+
 st.set_page_config(
     page_title="Uber NCR Intelligence System",
     page_icon="🚖",
     layout="wide"
 )
+
 
 @st.cache_resource
 def load_files():
@@ -53,6 +55,7 @@ st.caption(
 st.divider()
 
 
+
 menu = st.sidebar.radio(
     "Choose Service",
     [
@@ -60,6 +63,8 @@ menu = st.sidebar.radio(
         "Ride Status Prediction"
     ]
 )
+
+
 
 col1, col2 = st.columns(2)
 
@@ -101,6 +106,7 @@ with col2:
 ride_time = st.time_input(
     "Ride Time"
 )
+
 
 hour = ride_time.hour
 
@@ -148,6 +154,9 @@ if menu == "Fare Prediction":
             value=f"₹{fare:,.2f}"
         )
 
+# ==========================
+# STATUS PREDICTION
+# ==========================
 
 if menu == "Ride Status Prediction":
 
@@ -168,9 +177,9 @@ if menu == "Ride Status Prediction":
             value=status
         )
 
+
 st.divider()
 
 st.caption(
     "Built using Python, Scikit-Learn, Streamlit and Machine Learning"
 )
-```
